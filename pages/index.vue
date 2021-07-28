@@ -66,7 +66,38 @@
 </template>
 
 <script>
-export default {  
+export default {
+  header() {
+    return {
+      meta: [
+        { property: "og:site_name", content: "namsudtho.github.io/covid19-tracker" },
+        { hid: "og:type", property: "og:type", content: "website" },
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: "https://namsudtho.github.io/covid19-tracker",
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: "Covid-19 Tracker",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: "เว็บไซต์รายงานข้อมูลผู้ติดเชื้อ COVID-19 ประจำวัน ข้อมูลประจำประเทศไทย.",
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "~/assets/img/screenshot.png",
+        },
+        { property: "og:image:width", content: "740" },
+        { property: "og:image:height", content: "300" },
+      ],
+    }
+  },
+
   data() {
     return {
       cases: {}
