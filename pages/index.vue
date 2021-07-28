@@ -67,7 +67,7 @@
 
 <script>
 export default {
-  header() {
+  head() {
     return {
       meta: [
         { property: "og:site_name", content: "namsudtho.github.io/covid19-tracker" },
