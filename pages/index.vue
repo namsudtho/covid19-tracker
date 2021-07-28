@@ -7,7 +7,7 @@
       </div>
       <div class="mx-auto text-sm leading-tight">
         <span class="text-white">API by</span>
-        <a href="//easysunday.com" class="text-blue-300 hover:underline" target="_blank">easysunday.com</a>
+        <a href="https://covid19.th-stat.com/" class="text-blue-300 hover:underline" target="_blank">covid19.th-stat.com</a>
       </div>
     </header>
 
@@ -110,7 +110,7 @@ export default {
 
   methods: {
     async fetchData() {
-      const cases = await this.$axios.$get('https://static.easysunday.com/covid-19/getTodayCases.json')
+      const cases = await this.$axios.$get('http://covid19.th-stat.com/json/covid19v2/getTodayCases.json')
       this.cases = cases
     },
 
