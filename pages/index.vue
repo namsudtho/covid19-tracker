@@ -2,7 +2,7 @@
   <div class="flex flex-col h-screen">
     <header class="p-4 bg-blue-800 flex flex-col justify-center">
       <div class="mx-auto flex items-center gap-2">
-        <img src="images/virus-2.png" class="w-10" />
+        <img src="~/assets/img/virus-2.png" class="w-10" />
         <span class="text-3xl text-white font-medium leading-tight">Covid-19 Tracker</span>
       </div>
       <div class="mx-auto text-sm leading-tight">
@@ -17,7 +17,7 @@
         <div class="grid grid-cols-2 gap-6">
           <div class="col-span-2 py-6 pr-16 bg-white rounded-lg shadow flex justify-center gap-6">
             <div>
-              <img src="images/virus-red.png" class="w-12" />
+              <img src="~/assets/img/virus-red.png" class="w-12" />
             </div>
             <div class="text-center">
               <div class="text-red-400 text-sm">ผู้ป่วยรายใหม่วันนี้</div>
@@ -27,7 +27,7 @@
           </div>
           <div class="col-span-2 md:col-span-1 py-6 pr-16 bg-white rounded-lg shadow flex justify-center gap-4">
             <div>
-              <img src="images/virus-green.png" class="w-12" />
+              <img src="~/assets/img/virus-green.png" class="w-12" />
             </div>
             <div class="text-center">
               <div class="text-green-400 text-sm">หายป่วยแล้ววันนี้</div>
@@ -37,7 +37,7 @@
           </div>
           <div class="col-span-2 md:col-span-1 py-6 pr-16 bg-white rounded-lg shadow flex justify-center gap-4">
             <div>
-              <img src="images/virus-gray.png" class="w-12" />
+              <img src="~/assets/img/virus-gray.png" class="w-12" />
             </div>
             <div class="text-center">
               <div class="text-gray-500 text-sm">เสียชีวิตวันนี้</div>
@@ -66,7 +66,7 @@
 </template>
 
 <script>
-export default {
+export default {  
   data() {
     return {
       cases: {}
