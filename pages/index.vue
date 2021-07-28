@@ -66,6 +66,8 @@
 </template>
 
 <script>
+import ogImage from '@/assets/img/screenshot.png';
+
 export default {
   head() {
     return {
@@ -90,10 +92,8 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: "~/assets/img/screenshot.png",
-        },
-        { property: "og:image:width", content: "740" },
-        { property: "og:image:height", content: "300" },
+          content: process.env.baseUrl + ogImage,
+        }
       ],
     }
   },
