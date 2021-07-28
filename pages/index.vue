@@ -110,7 +110,7 @@ export default {
 
   methods: {
     async fetchData() {
-      const cases = await this.$axios.$get('http://covid19.th-stat.com/json/covid19v2/getTodayCases.json')
+      const cases = await this.$axios.$get('https://covid19.th-stat.com/json/covid19v2/getTodayCases.json')
       this.cases = cases
     },
 
