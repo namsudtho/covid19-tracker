@@ -79,6 +79,12 @@
 import ogImage from '@/assets/img/screenshot.png';
 
 export default {
+  data() {
+    return {
+      cases: {}
+    }
+  },
+
   head() {
     return {
       meta: [
@@ -105,12 +111,6 @@ export default {
           content: process.env.baseUrl + ogImage,
         }
       ],
-    }
-  },
-
-  data() {
-    return {
-      cases: {}
     }
   },
 
