@@ -11,12 +11,12 @@
       </div>
     </header>
 
-    <main class="flex-grow bg-gray-200 py-10 px-6">
+    <main class="flex-grow bg-gray-200 p-6">
       <div class="mx-auto max-w-4xl">
         <div class="mb-4 text-blue-700 text-right">ข้อมูลอัพเดทล่าสุด {{ cases.UpdateDate }}</div>
         <div class="grid grid-cols-2 gap-6">
-          <div class="col-span-2 py-6 pr-16 bg-white rounded-lg shadow flex justify-center gap-6">
-            <div>
+          <div class="relative col-span-2 p-6 bg-white rounded-lg shadow flex justify-center gap-6">
+            <div class="absolute pr-56 md:pr-72">
               <img src="~/assets/img/virus-red.png" class="w-12" />
             </div>
             <div class="text-center">
@@ -25,8 +25,18 @@
               <div class="text-red-400">ผู้ป่วยสะสม {{ numberFormat(cases.Confirmed) }}</div>
             </div>
           </div>
-          <div class="col-span-2 md:col-span-1 py-6 pr-16 bg-white rounded-lg shadow flex justify-center gap-4">
-            <div>
+          <div class="col-span-2 p-6 bg-white rounded-lg shadow flex justify-center gap-6">
+            <div class="absolute pr-56 md:pr-72">
+              <img src="~/assets/img/virus-yellow.png" class="w-12" />
+            </div>
+            <div class="text-center">
+              <div class="text-yellow-400 text-sm">กำลังรักษาเพิ่มวันนี้</div>
+              <div class="text-4xl text-yellow-500 font-semibold tracking-wide">{{ numberFormat(cases.NewHospitalized) }}</div>
+              <div class="text-yellow-400">กำลังรักษาสะสม {{ numberFormat(cases.Hospitalized) }}</div>
+            </div>
+          </div>
+          <div class="col-span-2 md:col-span-1 p-6 bg-white rounded-lg shadow flex justify-center gap-4">
+            <div class="absolute pr-56 md:pr-72">
               <img src="~/assets/img/virus-green.png" class="w-12" />
             </div>
             <div class="text-center">
@@ -35,8 +45,8 @@
               <div class="text-green-400">หายป่วยสะสม {{ numberFormat(cases.Recovered) }}</div>
             </div>
           </div>
-          <div class="col-span-2 md:col-span-1 py-6 pr-16 bg-white rounded-lg shadow flex justify-center gap-4">
-            <div>
+          <div class="col-span-2 md:col-span-1 p-6 bg-white rounded-lg shadow flex justify-center gap-4">
+            <div class="absolute pr-56 md:pr-72">
               <img src="~/assets/img/virus-gray.png" class="w-12" />
             </div>
             <div class="text-center">
